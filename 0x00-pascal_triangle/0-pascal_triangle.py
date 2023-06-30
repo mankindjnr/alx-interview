@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """
-this function returns a list of lists of integers representing the pascal's triangle
+representation of the pascal's triangle
 """
 def pascal_triangle(n):
+    """
+    this function returns a list of lists of integers 
+    """
     major = []
     if n <= 0:
         return major
