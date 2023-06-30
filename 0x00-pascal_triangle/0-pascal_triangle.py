@@ -2,9 +2,11 @@
 """
 representation of the pascal's triangle
 """
+
+
 def pascal_triangle(n):
     """
-    this function returns a list of lists of integers 
+    this function returns a list of lists of integers
     """
     major = []
     if n <= 0:
@@ -17,7 +19,7 @@ def pascal_triangle(n):
             major_len = len(major)
             for j in range(n - (n-(i+1))):
                 if major_len < 2:
-                    if i > 0:   
+                    if i > 0:
                         a_list.append(i)
                     else:
                         a_list.append(i+1)
@@ -32,8 +34,5 @@ def pascal_triangle(n):
 
                     a_list.append(1)
                     break
-            
             major.append(a_list)
-        
         return major
-
