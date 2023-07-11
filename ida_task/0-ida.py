@@ -11,8 +11,7 @@ i.e given [1, 3, 6, 4, 1, 2]
 assumption: N is an integer within the range: [1...100,000]
 and each element of array is an integer within the range: [-1,000,000, 1,000,000]
 """
-from typing import List, Set
-
+from typing import List
 
 
 def solution(arr: List[int]) -> int:
