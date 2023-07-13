@@ -11,7 +11,7 @@ def isPrime(number):
     """
     if number < 2:
         return False
-
+    
     for i in range(2, int(number**0.5) + 1):
         if number % i == 0:
             return False
@@ -33,6 +33,7 @@ def minOperations(n):
     elif (n < 1):
         return 0
 
+    
     while True:
         if n % div == 0:
             prime_factors.append(div)
@@ -42,9 +43,11 @@ def minOperations(n):
                 div += 1
                 if (isPrime(div)):
                     break
-
+        
         if n == 1:
             break
 
     minOps = sum([prime for prime in prime_factors])
     return(minOps)
+
+

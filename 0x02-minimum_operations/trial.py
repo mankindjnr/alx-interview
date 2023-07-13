@@ -11,13 +11,11 @@ def primes(n):
     prime_factors = []
     div = 2
 
-    if not str(n).isdigit():
+    if not isinstance(n, int) or n <= 1:
         return 0
 
     if n == 1:
         return 1
-    elif (n < 1):
-        return 0
 
     
     while True:
