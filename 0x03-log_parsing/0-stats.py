@@ -48,7 +48,7 @@ try:
             file_size = match.group(5)
 
             all_codes.append(status_code)
-            total_size += int(file_size
+            total_size += int(file_size)
 
             counter += 1
 
