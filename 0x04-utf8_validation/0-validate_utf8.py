@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 a method that determined if a given data set
 represents a valid utf-8 encoding
